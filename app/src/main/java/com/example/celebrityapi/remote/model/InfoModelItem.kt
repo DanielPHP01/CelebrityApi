@@ -6,6 +6,7 @@ data class InfoModelItem(
     val name: String?,
     val gender: String?,
     val nationality: String?,
+    val occupation: List<String?>?,
     val height: Double?,
     val birthday: String?,
     val age: Int?,

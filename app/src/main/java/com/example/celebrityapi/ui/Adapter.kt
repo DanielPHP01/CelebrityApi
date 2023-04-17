@@ -26,6 +26,12 @@ class Adapter : RecyclerView.Adapter<Adapter.ItemViewHolder>() {
                 tvGender.text = item.gender
                 tvHeight.text = item.height.toString()
                 tvNationality.text = item.nationality
+                val occupation = item.occupation
+                val result = java.lang.StringBuilder()
+                for (element in occupation!!) {
+                    result.append("$element\n")
+                }
+                tvOccupation.text = result.toString()
             }
         }
     }
